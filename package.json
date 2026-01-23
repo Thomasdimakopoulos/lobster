@@ -21,7 +21,7 @@
   "main": "./dist/src/sdk/index.js",
   "scripts": {
     "clean": "rm -rf dist",
-    "build": "pnpm clean && tsc -p tsconfig.json",
+    "build": "node init && pnpm clean && tsc -p tsconfig.json",
     "prepack": "pnpm build",
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "lint": "oxlint --tsconfig tsconfig.json src test",
@@ -30,6 +30,8 @@
   },
   "devDependencies": {
     "@types/node": "^22.0.0",
+    "dotenv": "^8.2.0",
+    "node-fetch": "^3.3.2",
     "oxlint": "^0.15.0",
     "typescript": "^5.7.0"
   },
