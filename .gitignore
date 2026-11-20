@@ -17,4 +17,6 @@ clawdbot_enhancement.md
 *.log
 
 # Environment
-config.bat
+
+.env
+.env.local
